@@ -101,19 +101,14 @@ namespace Camera.ScrollLogic
             {
                 return targetPos;
             }
-    
-            float xMin = _bottomLeftBoundary.position.x;
-            float xMax = _topRightBoundary.position.x;
-            float yMin = _bottomLeftBoundary.position.y;
-            float yMax = _topRightBoundary.position.y; 
 
             return new Vector3(
-                Mathf.Clamp(targetPos.x, xMin, xMax),
-                Mathf.Clamp(targetPos.y, yMin, yMax),
+                Mathf.Clamp(targetPos.x, _bottomLeftBoundary.position.x, _topRightBoundary.position.x),
+                Mathf.Clamp(targetPos.y, _bottomLeftBoundary.position.y, _topRightBoundary.position.y),
                 transform.position.z);
         }
         
-        private void Update()
+        private void LateUpdate()
         {
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref _velocity, smoothTime);
         }
