@@ -9,7 +9,6 @@ namespace Player.ActionHandlers
     public class ClickHandler : DontDestroyMonoBehaviourSingleton<ClickHandler>
     {
         [SerializeField] private float clickToDragDuration;
-
         public event Action<Vector3> PointerDownEvent;
         public event Action<Vector3> ClickEvent;
         public event Action<Vector3> PointerUpEvent;
@@ -29,7 +28,7 @@ namespace Player.ActionHandlers
             {
                 _isClick = true;
                 _clickHoldDuration = .0f;
-
+                
                 _pointerDownPosition = CameraHolder.Instance.MainCamera.ScreenToWorldPoint(Input.mousePosition);
                 
                 PointerDownEvent?.Invoke(_pointerDownPosition);

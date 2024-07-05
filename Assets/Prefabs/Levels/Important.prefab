@@ -132,6 +132,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3828653299366524351}
     m_Modifications:
+    - target: {fileID: 2075289086325953717, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075289086325953717, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4165680575620093497}
+    - target: {fileID: 2075289086325953717, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SkipLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075289086325953717, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI.SkipLevelButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075289086325953717, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8729762198290496681, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -231,3 +251,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8729762199670813557, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
   m_PrefabInstance: {fileID: 5477577348709947779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6949815844791566280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3204019917447472715, guid: 3bf0bf316052e4492a34223206ef5c5e, type: 3}
+  m_PrefabInstance: {fileID: 5477577348709947779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4165680575620093497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949815844791566280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933483f27aa04cdd9d3648c41f543d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
